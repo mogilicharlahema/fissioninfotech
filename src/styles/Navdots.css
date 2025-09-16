@@ -1,0 +1,28 @@
+.nav-dots-wave {
+  position: fixed;
+  top: 50%;
+  transform: translateY(-50%);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  pointer-events: none; /* decorative only */
+  z-index: 1400;
+}
+
+.nav-dots-wave .dot {
+  border-radius: 50%;
+  will-change: transform, opacity;
+  opacity: 0.35; /* base (JS updates per frame) */
+  transform: translateY(0) scale(1);
+  box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+}
+
+/* Accessibility: respect reduce-motion */
+@media (prefers-reduced-motion: reduce) {
+  .nav-dots-wave .dot {
+    transition: none !important;
+    transform: none !important;
+    opacity: 1 !important;
+    box-shadow: none !important;
+  }
+}

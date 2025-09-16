@@ -1,0 +1,203 @@
+/* Default Hero Section */
+.hero {
+  display: flex;
+  align-items: center;
+  justify-content: space-evenly;
+  padding: 60px;
+  flex-wrap: wrap;
+  background: #fff;
+  color: #000;
+  transition: all 0.4s ease-in-out; /* smooth mode switch */
+}
+
+/* Dark mode */
+.hero.dark {
+  background: #111;
+  color: #e0e0e0;
+}
+
+/* Left side text */
+.hero-text {
+  max-width: 600px;
+}
+
+.hero-text h1 {
+  font-size: 100px;
+  font-weight: 800;
+  line-height: 1.0;
+  margin-top: 20px;
+  transition: color 0.4s ease-in-out;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+}
+
+.hero-text p {
+  font-size: 30px;
+  margin-top: -21px;
+  transition: color 0.4s ease-in-out;
+}
+
+.hero-text span {
+  font-size: 22px;
+  font-family: "Inter", "Helvetica Neue", Arial, sans-serif;
+  display: block;
+  margin-bottom: 20px;
+  transition: color 0.4s ease-in-out;
+}
+
+/* GIF (right side image) */
+.hero-gif img {
+  width: 550px;
+  max-width: 100%;
+  background: transparent !important; /* prevent white box */
+  border: none !important;
+  box-shadow: none !important;
+  transition: transform 0.4s ease-in-out;
+}
+
+/* subtle hover effect on gif */
+.hero-gif img:hover {
+  transform: scale(1.03);
+}
+
+/* Clients logos section */
+.clients {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top:20px;
+  gap: 60px;
+}
+
+.clients img {
+  height: 50px;
+  object-fit: contain;
+  filter: none; /* keep logos original */
+  transition: filter 0.4s ease-in-out;
+}
+
+/* Dark mode logos */
+.hero.dark .clients img {
+  filter: brightness(0.85); /* just dim, don’t invert */
+}
+
+/* 📱 Small mobiles */
+@media (max-width: 480px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 40px 15px;
+  }
+
+  .hero-text h1 {
+    font-size: 28px;
+  }
+
+  .hero-text p {
+    font-size: 14px;
+    margin-top: -20px;
+  }
+
+  .hero-gif img {
+    width: 250px;
+    margin-top: 20px;
+  }
+
+  .clients {
+    gap: 15px;
+  }
+
+  .clients img {
+    height: 25px;
+  }
+}
+
+/* 📱 Larger mobiles & small tablets */
+@media (min-width: 481px) and (max-width: 768px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 50px 20px;
+  }
+
+  .hero-text h1 {
+    font-size: 34px;
+  }
+
+  .hero-text p {
+    font-size: 16px;
+  }
+
+  .hero-gif img {
+    width: 300px;
+    margin-top: 25px;
+  }
+
+  .clients {
+    gap: 20px;
+  }
+
+  .clients img {
+    height: 30px;
+  }
+}
+
+/* 💻 Tablets & small laptops */
+@media (min-width: 769px) and (max-width: 1024px) {
+  .hero {
+    flex-direction: column;
+    text-align: center;
+    padding: 60px 30px;
+  }
+
+  .hero-text h1 {
+    font-size: 48px;
+  }
+
+  .hero-text p {
+    font-size: 18px;
+  }
+
+  .hero-gif img {
+    width: 350px;
+    margin-top: 30px;
+  }
+}
+
+/* 🖥️ Medium to large desktops */
+@media (min-width: 1025px) and (max-width: 1440px) {
+  .hero-text h1 {
+    font-size: 72px;
+  }
+
+  .hero-text p {
+    font-size: 22px;
+  }
+
+  .hero-gif img {
+    width: 450px;
+  }
+}
+
+/* 🖥️💎 Extra large screens (1440px+) */
+@media (min-width: 1441px) {
+  .hero {
+    padding: 80px 120px;
+  }
+
+  .hero-text h1 {
+    font-size: 100px;
+  }
+
+  .hero-text p {
+    font-size: 30px;
+    margin-top: -60px;
+  }
+
+  .hero-gif img {
+    width: 600px;
+  }
+
+  .clients img {
+    height: 60px;
+  }
+}
