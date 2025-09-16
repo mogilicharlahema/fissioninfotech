@@ -3,7 +3,7 @@
   display: flex;
   align-items: center;
   justify-content: space-evenly;
-  padding: 60px;
+  padding:10px;
   flex-wrap: wrap;
   background: #fff;
   color: #000;
@@ -31,7 +31,7 @@
 }
 
 .hero-text p {
-  font-size: 30px;
+  font-size: 25px;
   margin-top: -21px;
   transition: color 0.4s ease-in-out;
 }
