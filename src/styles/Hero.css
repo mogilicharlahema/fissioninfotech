@@ -180,9 +180,9 @@
 
 /* 🖥️💎 Extra large screens (1440px+) */
 @media (min-width: 1441px) {
-  .hero {
+  /* .hero {
     padding: 80px 120px;
-  }
+  } */
 
   .hero-text h1 {
     font-size: 100px;
