@@ -270,7 +270,7 @@
   .navbar { padding: 20px 100px; }
   .logo { left: 98px; }
   .right-actions { left:-180px; }
-  .nav-links { gap: 30px; margin-left: 120px;}
+  .nav-links { gap: 30px; }
 }
 
 /* ---------- ACCESSIBILITY ---------- */
